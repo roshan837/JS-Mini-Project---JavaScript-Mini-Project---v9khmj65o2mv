@@ -1,1 +1,82 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: fantasy;
+}
+.gameContainer{
+    background-image: url('https://media.istockphoto.com/vectors/mars-landscape-alien-planet-martian-background-vector-id1219106237?k=20&m=1219106237&s=612x612&w=0&h=xmiYGKuup4yXife2Q1XU4GTJY1yg3TCY6i5kkTd8lwg=');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
 
+.dino{
+    background-image: url('./dino.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom:0;
+    left: 52px;
+    background-size: 100% 100%;
+}
+
+.obstacle{
+    width: 200px;
+    height: 200px;
+    background-image: url('./dragon.png');
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+
+.animateDino{
+    animation: dino 0.7s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top:63px;
+    font-size: 53px;
+    text-align: center;
+}
+
+#scoreCont{
+    font-size: 25px;
+    color: #54212f;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 600px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
