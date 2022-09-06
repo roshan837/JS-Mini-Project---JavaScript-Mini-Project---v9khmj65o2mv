@@ -7,6 +7,8 @@
     background-image: url('https://media.istockphoto.com/vectors/mars-landscape-alien-planet-martian-background-vector-id1219106237?k=20&m=1219106237&s=612x612&w=0&h=xmiYGKuup4yXife2Q1XU4GTJY1yg3TCY6i5kkTd8lwg=');
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 100vh;
 }
